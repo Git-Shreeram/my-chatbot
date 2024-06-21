@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Chatbot Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        #chatbot {
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #chatArea {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        #userInput {
+            width: calc(100% - 80px);
+            padding: 10px;
+        }
+        #sendButton {
+            padding: 10px 20px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbot">
+        <h2>Chatbot</h2>
+        <div id="chatArea"></div>
+        <input type="text" id="userInput" placeholder="Type your message here...">
+        <button id="sendButton" onclick="sendMessage()">Send</button>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
